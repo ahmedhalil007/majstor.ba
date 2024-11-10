@@ -4,18 +4,18 @@ This is the frontend application for the Majstor.ba, built with **React** and st
 
 **Installation**
 
-1. Clone the Repository
-   Clone the repository to your local machine:
-   `git clone <repository_url>`
+1. Clone the Repository <br>
+   Clone the repository to your local machine:<br>
+   `git clone <repository_url>` <br>
    `cd <repository_folder>`
 
-2. Install Dependencies
-   To install all required dependencies for the project, run:
+2. Install Dependencies <br>
+   To install all required dependencies for the project, run: <br>
    `npm install`
 
-3. Start the Development Server
-   Before you start Frontend application, make sure you have done all setup configuration for Backend application.
-   To start the application locally, run the following command:
+3. Start the Development Server <br>
+   Before you start Frontend application, make sure you have done all setup configuration for Backend application. <br>
+   To start the application locally, run the following command: <br>
    `npm run dev`
 
 **Key Features of the Frontend Application and Their Implementation**
@@ -32,22 +32,22 @@ Pagination is implemented by sending requests with page parameters (e.g., page=1
 **User Authentication and Authorization**
 When a user logs in successfully, the backend sends a **JWT token**, which is saved in the **localStorage** of the browser. This token is used for verifying the user during subsequent requests, allowing access to protected areas of the application based on the user's role (e.g., user, admin or craftsman).
 
-**Repository Structure**
-Here is a breakdown of the key folders and files in the project:
+**Repository Structure** <br>
+Here is a breakdown of the key folders and files in the project: <br>
 
-`src/`
-`components/` - Contains reusable components like CustomNavbar, CustomFooter, etc.
-`homePage/` - Contains the homepage components and logic.
-`signup-login/` - Contains the signup, login, and reset password pages.
-`userDetails/` - Contains the user details page.
-`postDetails/` - Contains the post details page.
-`admin/` - Contains the admin-related components like HomeAdmin, LoginAdmin, etc.
-`aboutusPage/` - Contains information about the team as well as a contact form.
-`App.jsx` - Main application component containing routes.
-`index.css` - Global CSS styles.
-`App.css` - Specific styles for the App component.
+`src/` <br>
+`components/` - Contains reusable components like CustomNavbar, CustomFooter, etc. <br>
+`homePage/` - Contains the homepage components and logic.<br>
+`signup-login/` - Contains the signup, login, and reset password pages.<br>
+`userDetails/` - Contains the user details page.<br>
+`postDetails/` - Contains the post details page.<br>
+`admin/` - Contains the admin-related components like HomeAdmin, LoginAdmin, etc.<br>
+`aboutusPage/` - Contains information about the team as well as a contact form.<br>
+`App.jsx` - Main application component containing routes.<br>
+`index.css` - Global CSS styles.<br>
+`App.css` - Specific styles for the App component.<br>
 
-**Routing**
+**Routing**<br>
 The application uses React Router (react-router-dom) for routing. Below are the key routes:
 
 **Public Routes**:
@@ -67,20 +67,20 @@ The application uses React Router (react-router-dom) for routing. Below are the 
 - /admin/userId/:userId - Admin view of user details
 - /admin/post/:postId - Admin view of post details
 
-**Dependencies**
+**Dependencies**<br>
 The application uses the following key libraries:
 
-`react`: A JavaScript library for building user interfaces.
-`@nextui-org/react`: A React UI kit that provides prebuilt components with a modern design.
-`react-router-dom`: A library for handling routing in React applications.
-`react-dom`: Provides DOM-specific methods for React, including the entry point for rendering the application.
-`@fortawesome/fontawesome-free and @fortawesome/react-fontawesome`: Provides access to FontAwesome icons for React.
-`axios`: Promise-based HTTP client used for making API requests.
-`framer-motion`: Library for animations in React.
-`jsonwebtoken`: Used for creating and verifying JSON Web Tokens, commonly used for authentication.
-`react-router-dom`: For routing in React applications.
-`sonner`: Used for creating notifications or toast messages.
-`tailwindcss and postcss`: CSS utilities and preprocessors for styling.
-`vite`: A modern build tool for fast development and bundling.
-`eslint`: A tool for identifying and reporting on patterns in JavaScript, ensuring code quality.
+`react`: A JavaScript library for building user interfaces.<br>
+`@nextui-org/react`: A React UI kit that provides prebuilt components with a modern design.<br>
+`react-router-dom`: A library for handling routing in React applications.<br>
+`react-dom`: Provides DOM-specific methods for React, including the entry point for rendering the application.<br>
+`@fortawesome/fontawesome-free and @fortawesome/react-fontawesome`: Provides access to FontAwesome icons for React.<br>
+`axios`: Promise-based HTTP client used for making API requests.<br>
+`framer-motion`: Library for animations in React.<br>
+`jsonwebtoken`: Used for creating and verifying JSON Web Tokens, commonly used for authentication.<br>
+`react-router-dom`: For routing in React applications.<br>
+`sonner`: Used for creating notifications or toast messages.<br>
+`tailwindcss and postcss`: CSS utilities and preprocessors for styling.<br>
+`vite`: A modern build tool for fast development and bundling.<br>
+`eslint`: A tool for identifying and reporting on patterns in JavaScript, ensuring code quality.<br>
 `cypress`: End-to-end testing framework.

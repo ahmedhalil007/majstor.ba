@@ -108,21 +108,21 @@ Available Endpoints:
 - Install dependencies:
   `npm install`
 
-**Database Setup**
+**Database Setup**<br>
 The application requires a PostgreSQL database. Follow these steps to set up the database:
 
 - Create a PostgreSQL database and update the **config.js** file with your database connection details.
 - The database schema includes tables for users, posts, ratings/comments, requests, and login sessions. The schema is automatically checked and created if not existing in the database.
 
-**Environment Configuration**
-Before running the application, create a **.env** file in the root directory and add the following environment variables:
-`JWT_SECRET`: Secret key used for JSON Web Token (JWT) authentication.
-`EMAIL_USER`: The email address used for sending support messages.
+**Environment Configuration**<br>
+Before running the application, create a **.env** file in the root directory and add the following environment variables:<br>
+`JWT_SECRET`: Secret key used for JSON Web Token (JWT) authentication.<br>
+`EMAIL_USER`: The email address used for sending support messages.<br>
 `EMAIL_PASS`: The password or application-specific password for the email address. Create 2-Step Versification password on your email acc and use it for `EMAIL_PASS`.
 
-**Usage**
-To start the application locally, run:
+**Usage** <br>
+To start the application locally, run:<br>
 `npm start`
 
-**API Endpoints**
+**API Endpoints**<br>
 All API Endpoints are avaliable within `Majstor.ba Copy.postman_collection`, import that file in your Postman application.
