@@ -2,7 +2,7 @@
 
 This is a backend part of Majstor.ba application built with **Node.js**, **Express**, and **PostgreSQL**. The application provides a **RESTful API** for managing users, posts, comments, requests, contact information, and administrative tasks. The API is designed to handle HTTP requests from a frontend interface, performing **CRUD** operations and communicating with a PostgreSQL database to store and retrieve data. The backend is also configured with CORS to allow cross-origin requests.
 
-**Table of Contents**
+# Table of Contents
 
 - Technologies
 - Repository Structure
@@ -11,7 +11,7 @@ This is a backend part of Majstor.ba application built with **Node.js**, **Expre
 - Environment Configuration
 - API Endpoints
 
-**Technologies**
+# Technologies
 
 - Node.js - Server runtime
 - Express.js - Web framework for handling HTTP requests
@@ -27,7 +27,7 @@ This is a backend part of Majstor.ba application built with **Node.js**, **Expre
 - nodemon - Development tool that automatically restarts the server on code changes.
 - pg - PostgreSQL client for Node.js, used to interact with the PostgreSQL database.
 
-**Repository Structure**
+# Repository Structure
 Here’s a breakdown of the main folders and files:
 
 **app.js** is the main server file that configures middleware, routes, and static file directories, setting up the Express application to handle API requests. It also starts the server on port 8080 and manages all core functionalities for the backend.
@@ -99,7 +99,7 @@ Available Endpoints:
 
 - POST /: This endpoint allows users to send a customer support message by providing their name, email, phone number, and a message. Upon submitting, an email is sent to the designated support email, and the user receives a success or error message.
 
-**Installation**
+# Installation
 
 - Clone the repository:
   `git clone <repository_url>`
@@ -108,21 +108,21 @@ Available Endpoints:
 - Install dependencies:
   `npm install`
 
-**Database Setup**<br>
+# Database Setup
 The application requires a PostgreSQL database. Follow these steps to set up the database:
 
 - Create a PostgreSQL database and update the **config.js** file with your database connection details.
 - The database schema includes tables for users, posts, ratings/comments, requests, and login sessions. The schema is automatically checked and created if not existing in the database.
 
-**Environment Configuration**<br>
+# Environment Configuration
 Before running the application, create a **.env** file in the root directory and add the following environment variables:<br>
 `JWT_SECRET`: Secret key used for JSON Web Token (JWT) authentication.<br>
 `EMAIL_USER`: The email address used for sending support messages.<br>
 `EMAIL_PASS`: The password or application-specific password for the email address. Create 2-Step Versification password on your email acc and use it for `EMAIL_PASS`.
 
-**Usage** <br>
+# Usage
 To start the application locally, run:<br>
 `npm start`
 
-**API Endpoints**<br>
+# API Endpoints
 All API Endpoints are avaliable within `Majstor.ba Copy.postman_collection`, import that file in your Postman application.
