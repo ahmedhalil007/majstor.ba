@@ -20,16 +20,16 @@ This is the frontend application for the Majstor.ba, built with **React** and st
 
 # Key Features of the Frontend Application and Their Implementation
 
-**1. Communication with the Backend**
+**1. Communication with the Backend**<br>
 The frontend application communicates with the backend by sending HTTP requests using the Axios library. Axios simplifies sending GET, POST, PUT, and DELETE requests to the backend, and handles the responses that come back from the server.
 
-**2. Craftsman Search**
+**2. Craftsman Search**<br>
 The search component works by sending a request to the backend every time the user types a new letter. This process is known as "debouncing", which helps prevent sending too many requests in a short period and improves performance by only sending requests when necessary.
 
-**3. Pagination**
+**3. Pagination**<br>
 Pagination is implemented by sending requests with page parameters (e.g., page=1) along with optional **filters such as service and location** to the backend. This allows the frontend to request data specific to a given page, service, and location, optimizing the results returned by the backend. The backend then returns only the relevant data for that particular page and filter combination, improving loading times and the overall performance of the application.
 
-**4. User Authentication and Authorization**
+**4. User Authentication and Authorization**<br>
 When a user logs in successfully, the backend sends a **JWT token**, which is saved in the **localStorage** of the browser. This token is used for verifying the user during subsequent requests, allowing access to protected areas of the application based on the user's role (e.g., user, admin or craftsman).
 
 # Repository Structure
