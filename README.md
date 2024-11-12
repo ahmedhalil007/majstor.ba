@@ -6,7 +6,7 @@ the right professional for their needs as well as the rating system.
 
 This project is done using React for frontend, Node.js for backend and PostgreSQL database. It implements a RESTful API, allowing the user interface to send requests to the server side of the application, which communicates with the database.
 
-**Tech Stack**
+# Tech Stack
 
 - Frontend: React, Vite, NextUI, Tailwind CSS
 - Backend: Node.js, Express.js
@@ -15,13 +15,13 @@ This project is done using React for frontend, Node.js for backend and PostgreSQ
 - Authentication: JSON Web Tokens (JWT)
 - Testing: Cypress
 
-**User Classes and Characteristics**
+# User Classes and Characteristics
 
 - Client: The client is a person or company that uses the Majstor.ba website to find and engage skilled professionals.
 - Craftsmen: A craftsman is a specialist who offers services on the Majstor.ba platform.
 - Admin: The admin has responsibility for managing the Majstor.ba platform.
 
-**Requirements**
+# Requirements
 
 - User Profile Creation: Registration for two types of user profiles: craftsman and client.
 - Authentication System: Log in to the website using a username and password.
